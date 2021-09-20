@@ -1,0 +1,29 @@
+---<%
+r.get do
+  bridgetown_site.reset soft: true
+  bridgetown_site.reader.read_layouts
+
+  render_with data: {
+    layout: :default
+  }
+end
+
+r.post do
+  sleep 1
+  cable_car
+    .append("#server-time", html: <<~HTML).dispatch
+      <li>The Time is #{Time.now}</li>
+    HTML
+end
+%>---
+
+<form method="POST" data-remote="true">
+<input type="submit" value="Submit me and get CableCar JSON back!" data-disable-with="Submitting…">
+</form>
+
+<ul id="server-time"></ul>
+
+<script>
+  document.querySelector("form").addEventListener("ajax:complete", () => { console.info("Form complete") })
+  document.querySelector("input[type=submit]").addEventListener("ajax:complete", () => { console.info("Button complete") })
+</script>
