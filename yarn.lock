@@ -814,9 +814,9 @@ minimist@^1.2.5:
   integrity sha512-Y8YRbAEP3eKykroIBWrjcfMw7mmwJfjhqdpSvoqinu8Y702nAwikpXcNFDiIkyvfCLxLM9Wu95RZqo4a9jFBaA==
 
 mrujs@^0.5.0-beta.4:
-  version "0.5.0-beta.4"
-  resolved "https://registry.yarnpkg.com/mrujs/-/mrujs-0.5.0-beta.4.tgz#a97f50b146a7decd23b73e787850dc511e1ba8e7"
-  integrity sha512-VgKPYpw/mw8IgXbqJUTlPHq12HSe+IR67atyYabaKwpH/al1H0zB7e07KUpzw7Pe46qpP/XikufFS8JebYYl2Q==
+  version "0.5.0-beta.5"
+  resolved "https://registry.yarnpkg.com/mrujs/-/mrujs-0.5.0-beta.5.tgz#9a654ac13e5a691509ca15a40f1397a3a2a294e7"
+  integrity sha512-+HBoR3RIGmS0hVE5Hu9uUBMtjYGAVlsfGLYK35XuAURMb4RYyB1dXSQq4bZjGsfgQ7Fi57O6bhPlbJl1LhT4sg==
   dependencies:
     morphdom ">=2.6.0 <3.0.0"
 
