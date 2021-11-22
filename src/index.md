@@ -6,4 +6,6 @@ layout: home
 
 Welcome to Bridgetown!
 
-[Test out mrujs!](/mrujs-form)
+**[Test out mrujs & CableCar!](/mrujs-form)**
+
+_(Note: it may take a moment at first for the free Render backend tier to wake up…)_

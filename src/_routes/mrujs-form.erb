@@ -14,15 +14,33 @@ r.post do
 end
 %>---
 
-<p>(Note: it may take a moment at first for the free Render backend tier to wake up…)</p>
+<h1>Mrujs &amp; CableCar</h1>
 
-<form method="POST" data-remote="true">
-<input type="submit" value="Submit me and get CableCar JSON back!" data-disable-with="Submitting…">
+<form method="post" action="/mrujs-form" data-remote="true">
+  <input
+    type="submit"
+    data-disable-with="Submitting…"
+    value="Submit me and get CableCar JSON back!"
+  />
 </form>
 
 <ul id="server-time"></ul>
 
 <script>
-  document.querySelector("form").addEventListener("ajax:complete", () => { console.info("Form complete") })
-  document.querySelector("input[type=submit]").addEventListener("ajax:complete", () => { console.info("Button complete") })
+  document.querySelector("form").addEventListener("ajax:complete", () => {
+    console.info("Form complete")
+  })
 </script>
+
+<hr />
+
+<h2>All accomplished with this simple source code!</h2>
+
+<% file_contents = File.read(site.in_source_dir("_routes", __FILE__)) %>
+<%= markdownify do %>
+```erb
+<%= file_contents[0...file_contents.index("<hr />")].html_safe %>
+```
+<% end %>
+
+<p><a href="https://github.com/jaredcwhite/cablecarz/blob/main/src/_routes/mrujs-form.erb">View on GitHub</a></p>
