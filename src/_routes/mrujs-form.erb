@@ -6,7 +6,6 @@ r.get do
 end
 
 r.post do
-  sleep 1
   cable_car
     .append("#server-time", html: <<~HTML).dispatch
       <li>The Time is #{Time.now}</li>
