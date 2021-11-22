@@ -1,8 +1,5 @@
 ---<%
 r.get do
-  bridgetown_site.reset soft: true
-  bridgetown_site.reader.read_layouts
-
   render_with data: {
     layout: :default
   }

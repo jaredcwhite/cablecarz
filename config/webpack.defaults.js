@@ -6,7 +6,7 @@
 // when an update is applied hence we strongly recommend adding overrides to
 // `webpack.config.js` instead of editing this file.
 //
-// Shipped with Bridgetown v0.21.4
+// Shipped with Bridgetown v1.0.0.alpha10
 
 const path = require("path");
 const rootDir = path.resolve(__dirname, "..")
@@ -24,8 +24,8 @@ const output = {
 
 // Rules and Loaders
 
-const jsRule =  {
-  test: /\.(js|jsx)/,
+const jsRule = {
+  test: /\.(js|jsx)$/,
   use: {
     loader: "esbuild-loader",
     options: {
