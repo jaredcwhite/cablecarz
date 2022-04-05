@@ -156,12 +156,3 @@ div.highlighter-rouge {
 .highlight .vg { color: var(--base-code-text-color) } /* Name.Variable.Global */
 .highlight .vi { color: var(--base-code-text-color) } /* Name.Variable.Instance */
 .highlight .il { color: #0000cf; font-weight: 500 } /* Literal.Number.Integer.Long */
-
-.language-liquid {
-  .highlight .p {
-    color: #8d8400;
-  }
-  .highlight .nv {
-    color: #204a87;
-  }
-}

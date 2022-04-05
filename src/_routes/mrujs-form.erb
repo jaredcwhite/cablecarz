@@ -6,10 +6,11 @@ r.get do
 end
 
 r.post do
-  cable_car
-    .append("#server-time", html: <<~HTML).dispatch
-      <li>The Time is #{Time.now}</li>
-    HTML
+  cable_car.append "#server-time", html: <<~HTML
+    <li>The Time is #{Time.now}</li>
+  HTML
+
+  dispatch
 end
 %>---
 

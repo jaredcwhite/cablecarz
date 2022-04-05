@@ -20,4 +20,8 @@ class RodaApp < Bridgetown::Rack::Roda
     response["Content-Type"] = "application/vnd.cable-ready.json"
     CableReady::CableCar.instance
   end
+
+  def dispatch
+    cable_car.dispatch
+  end
 end

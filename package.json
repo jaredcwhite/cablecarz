@@ -3,29 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "webpack-build": "webpack --mode production",
-    "webpack-dev": "webpack --mode development -w"
+    "esbuild": "node esbuild.config.js --minify",
+    "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
-    "css-loader": "^4.3.0",
-    "esbuild": "^0.13.15",
-    "esbuild-loader": "^2.16.0",
-    "file-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^1.3.1",
-    "postcss": "^8.3.0",
-    "postcss-flexbugs-fixes": "^4.1.0",
-    "postcss-loader": "^4.3.0",
-    "postcss-preset-env": "^6.7.0",
-    "webpack": "5.39.1",
-    "webpack-cli": "4.7.2",
-    "webpack-manifest-plugin": "3.1.1",
-    "webpack-merge": "^5.8.0"
+    "esbuild": "^0.14.31",
+    "glob": "^7.2.0",
+    "postcss": "^8.4.12",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.1.0",
+    "postcss-load-config": "^3.1.4",
+    "postcss-preset-env": "^7.4.3"
   },
   "resolutions": {
     "postcss-focus-within": "^4.0.0"
   },
   "dependencies": {
-    "cable_ready": "5.0.0-pre8",
-    "mrujs": "^0.6.0"
+    "cable_ready": "5.0.0-pre9",
+    "mrujs": "^0.9.0"
   }
 }
